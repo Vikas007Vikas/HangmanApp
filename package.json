@@ -2,7 +2,7 @@
   "name": "hangman",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mandali8686.github.io/hangman",
+  "homepage": "https://Vikas007Vikas.github.io/HangmanApp",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
