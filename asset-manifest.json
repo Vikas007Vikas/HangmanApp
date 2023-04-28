@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/HangmanApp/static/css/main.683975b5.css",
-    "main.js": "/HangmanApp/static/js/main.645e91d1.js",
+    "main.js": "/HangmanApp/static/js/main.33cd8257.js",
     "static/js/787.20ace30e.chunk.js": "/HangmanApp/static/js/787.20ace30e.chunk.js",
     "static/media/gameboardbg1.jpg": "/HangmanApp/static/media/gameboardbg1.5debcd1dd089bbaf93dd.jpg",
     "index.html": "/HangmanApp/index.html",
     "main.683975b5.css.map": "/HangmanApp/static/css/main.683975b5.css.map",
-    "main.645e91d1.js.map": "/HangmanApp/static/js/main.645e91d1.js.map",
+    "main.33cd8257.js.map": "/HangmanApp/static/js/main.33cd8257.js.map",
     "787.20ace30e.chunk.js.map": "/HangmanApp/static/js/787.20ace30e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.683975b5.css",
-    "static/js/main.645e91d1.js"
+    "static/js/main.33cd8257.js"
   ]
 }
