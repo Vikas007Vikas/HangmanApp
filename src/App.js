@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
         <Routes>
-          <Route exact path="/gameboard" element={<GameBoard maxGuesses={6} onGameOver={(win) => console.log(win)} />} />
-          <Route exact path="/leaderboard" element={<LeaderBoard />} />
-          <Route exact path="/challenge" element={<CustomWord />} />
-          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/HangmanApp/gameboard" element={<GameBoard maxGuesses={6} onGameOver={(win) => console.log(win)} />} />
+          <Route exact path="/HangmanApp/leaderboard" element={<LeaderBoard />} />
+          <Route exact path="/HangmanApp/challenge" element={<CustomWord />} />
+          <Route exact path="/HangmanApp/" element={<HomePage />} />
         </Routes>
     </Router>
   );

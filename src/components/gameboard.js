@@ -23,7 +23,7 @@ const Gameboard = ({ maxGuesses, onGameOver }) => {
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
 
-  const [hangmanImages, setHangmanImages] = useState([  "/images/0.jpg",  "/images/1.jpg",  "/images/2.jpg",  "/images/3.jpg",  "/images/4.jpg",  "/images/5.jpg",  "/images/6.jpg",]);
+  const [hangmanImages, setHangmanImages] = useState([  "/HangmanApp/images/0.jpg",  "/HangmanApp/images/1.jpg",  "/HangmanApp/images/2.jpg",  "/HangmanApp/images/3.jpg",  "/HangmanApp/images/4.jpg",  "/HangmanApp/images/5.jpg",  "/HangmanApp/images/6.jpg",]);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -116,7 +116,7 @@ const Gameboard = ({ maxGuesses, onGameOver }) => {
       button.classList.remove("disabled"); // re-enable the buttons
     });
     if (fromUrl) {
-      navigate("/gameboard");
+      navigate("/HangmanApp/gameboard");
       window.location.reload();
     }
   };
@@ -144,7 +144,7 @@ const Gameboard = ({ maxGuesses, onGameOver }) => {
       score: score
     });
 
-    navigate("/leaderboard");
+    navigate("/HangmanApp/leaderboard");
   };
 
   return (
@@ -152,10 +152,10 @@ const Gameboard = ({ maxGuesses, onGameOver }) => {
       <div className="GameBoard-Container">
         <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
           <NavBar 
-          navigateToGameBoard={() => {navigate("/gameboard")}}
-          navigateToLeaderBoard={() => {navigate("/leaderboard")}}
-          navigateToChallenge={() => {navigate("/challenge")}}
-          navigateToHome={() => {navigate("/")}}/>
+          navigateToGameBoard={() => {navigate("/HangmanApp/gameboard")}}
+          navigateToLeaderBoard={() => {navigate("/HangmanApp/leaderboard")}}
+          navigateToChallenge={() => {navigate("/HangmanApp/challenge")}}
+          navigateToHome={() => {navigate("/HangmanApp/")}}/>
           <div className="GameBoardInfo d-flex justify-content-center align-items-center">
             <div className="d-flex flex-grow-1 justify-content-center">
               <span className="px-3 gameboard-info-box" style={{color: "darkgray", marginRight: "10px"}}>Chances left: {remainingGuesses}</span>

@@ -8,13 +8,13 @@ function HomePage() {
         <div className='home-page-box'>
             <div className='home-page-button'>
                 <button className="btn btn-primary btn-lg">
-                    <Link to="/gameboard" style={{textDecoration: "None", color: "black"}}>Play</Link>
+                    <Link to="/HangmanApp/gameboard" style={{textDecoration: "None", color: "black"}}>Play</Link>
                 </button>
                 <button className="btn btn-primary btn-lg">
-                    <Link to="/leaderboard" style={{textDecoration: "None", color: "black"}}>Leaderboard</Link>
+                    <Link to="/HangmanApp/leaderboard" style={{textDecoration: "None", color: "black"}}>Leaderboard</Link>
                 </button>
                 <button className="btn btn-primary btn-lg">
-                    <Link to="/challenge" style={{textDecoration: "None", color: "black"}}>Challenge Friend</Link>
+                    <Link to="/HangmanApp/challenge" style={{textDecoration: "None", color: "black"}}>Challenge Friend</Link>
                 </button>
             </div>
         </div>

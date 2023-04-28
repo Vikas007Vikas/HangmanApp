@@ -30,10 +30,10 @@ const Leaderboard = () => {
       <div className="GameBoard-Container">
         <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
           <NavBar 
-            navigateToGameBoard={() => {navigate("/gameboard")}}
-            navigateToLeaderBoard={() => {navigate("/leaderboard")}}
-            navigateToChallenge={() => {navigate("/challenge")}}
-            navigateToHome={() => {navigate("/")}}/>
+            navigateToGameBoard={() => {navigate("/HangmanApp/gameboard")}}
+            navigateToLeaderBoard={() => {navigate("/HangmanApp/leaderboard")}}
+            navigateToChallenge={() => {navigate("/HangmanApp/challenge")}}
+            navigateToHome={() => {navigate("/HangmanApp/")}}/>
           <div className="Gameboard">
             <h2>Leaderboard</h2>
             <table style={{borderCollapse: "separate", borderSpacing: "10px"}}>

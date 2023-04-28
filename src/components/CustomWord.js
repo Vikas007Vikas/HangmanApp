@@ -26,7 +26,7 @@ const CustomWord = () => {
     // Function to handle custom word submission
     const handleCustomWordSubmit = () => {
         // Generate a unique URL with the custom word as a parameter
-        setUrl(`${window.location.origin}/gameboard?word=${encodeURIComponent(encode(word))}`)
+        setUrl(`${window.location.origin}/HangmanApp/gameboard?word=${encodeURIComponent(encode(word))}`)
         // Display the URL to the user
         // alert(`Share this link with someone else to play your word: ${url}`);
         setShowPopup(true);
@@ -37,9 +37,9 @@ const CustomWord = () => {
             <div className="GameBoard-Container">
                 <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
                     <NavBar 
-                        navigateToGameBoard={() => {navigate("/gameboard")}}
-                        navigateToLeaderBoard={() => {navigate("/leaderboard")}}
-                        navigateToChallenge={() => {navigate("/challenge")}}
+                        navigateToGameBoard={() => {navigate("/HangmanApp/gameboard")}}
+                        navigateToLeaderBoard={() => {navigate("/HangmanApp/leaderboard")}}
+                        navigateToChallenge={() => {navigate("/HangmanApp/challenge")}}
                         navigateToHome={() => {navigate("/")}}/>
                     <div className="Challengeboard">
                         <p>Challenge your friends by sending them puzzled words!!!</p>
