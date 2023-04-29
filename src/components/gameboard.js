@@ -7,13 +7,13 @@ import {db} from '../base';
 import {collection, addDoc} from 'firebase/firestore'
 import NavBar from "./NavBar";
 import { decode } from "base-64";
-// import image0 from "./images/0.jpg"
-// import image1 from "./images/1.jpg"
-// import image2 from "./images/2.jpg"
-// import image3 from "./images/3.jpg"
-// import image4 from "./images/4.jpg"
-// import image5 from "./images/5.jpg"
-// import image6 from "./images/6.jpg"
+import image0 from "./images/0.jpg"
+import image1 from "./images/1.jpg"
+import image2 from "./images/2.jpg"
+import image3 from "./images/3.jpg"
+import image4 from "./images/4.jpg"
+import image5 from "./images/5.jpg"
+import image6 from "./images/6.jpg"
 
 const Gameboard = ({ maxGuesses, onGameOver }) => {
   const [word, setWord] = useState("");
@@ -30,7 +30,7 @@ const Gameboard = ({ maxGuesses, onGameOver }) => {
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
 
-  // const [hangmanImages, setHangmanImages] = useState([image0, image1, image2, image3, image4, image5, image6]);
+  const [hangmanImages, setHangmanImages] = useState([image0, image1, image2, image3, image4, image5, image6]);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -170,9 +170,9 @@ const Gameboard = ({ maxGuesses, onGameOver }) => {
             </div>
           </div>
           <div className="Gameboard">
-            {/* <div className="Hangman">
+            <div className="Hangman">
               <img src={hangmanImages[6 - remainingGuesses]} alt="Hangman" style={{backgroundColor: "black", borderRadius: "10px"}}/>
-            </div> */}
+            </div>
             <div className="Gameboard-word">{renderWord()}</div>
             <div className="Gameboard-guesses">
               {gameOver ? (
