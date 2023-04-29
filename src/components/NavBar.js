@@ -20,7 +20,7 @@ const NavBar = ({ navigateToGameBoard, navigateToLeaderBoard, navigateToChalleng
                     Challenge
                 </button>
                 <button className="btn btn-menu btn-lg" onClick={navigateToHome}>
-                    <i className="fa fa-bars"></i>
+                    Menu
                 </button>
                 <button onClick={toggleModal}>?</button>
                 {showModal && (

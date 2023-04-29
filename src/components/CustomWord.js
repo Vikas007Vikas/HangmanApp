@@ -40,7 +40,7 @@ const CustomWord = () => {
                         navigateToGameBoard={() => {navigate("/HangmanApp/gameboard")}}
                         navigateToLeaderBoard={() => {navigate("/HangmanApp/leaderboard")}}
                         navigateToChallenge={() => {navigate("/HangmanApp/challenge")}}
-                        navigateToHome={() => {navigate("/")}}/>
+                        navigateToHome={() => {navigate("/HangmanApp/")}}/>
                     <div className="Challengeboard">
                         <p>Challenge your friends by sending them puzzled words!!!</p>
                         <input className='challenge-input' type="text" value={word} onChange={(e) => setWord(e.target.value)} placeholder="Enter a custom word"
